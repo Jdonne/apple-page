@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+body{
+    background: grey;
+    display:flex;
+    justify-content: center;
+}
+
+.main{
+    min-width: 980px;
+    width:1440px;
+    height:775px;
+    background: url("your_verse_hero.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#article {
+    width:1440px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 980px;
+}
+
+#title{
+    width:980px;
+    height: 97px;
+    object-fit: cover;
+}
+#subhead{
+    height:82px;
+    width: 980px;
+}
+
+#verse-link {
+    width:980px;
+    height: 32px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 25px;
+}
