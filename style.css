@@ -12,9 +12,99 @@ body{
     justify-content: center;
 }
 
+/* navbar */
+nav {
+    display:flex;
+    width: 980px;
+    height:36.5px;
+    z-index: 2;
+    position: absolute;
+    top:80px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        #8b8b8b,
+        
+        #707070 50%,
+        #5e5e5e 50%,
+        #787878
+    
+    );
+}
+ul {
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-start
+    
+    
+
+}
+li {
+    width: 104px;
+    height:36.5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 36.5px;
+    border-left: 1px solid grey;
+    color: white;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+}
+li:first-child {
+    border-left: none;
+}
+
+#search-bar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid grey;
+    height:36.5px;
+    width: 132px;
+
+}
+
+#search-bar div {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 12px;
+    background-image: linear-gradient(
+        to bottom,
+        #8b8b8b,
+        #7f7f7f 50%,
+        #6e6e6e 50%,
+        #777777
+    );
+
+}
+
+#magnify{
+    width: 15px;
+    height:14px;
+    background-color: transparent;
+    
+
+}
+
+#search {
+    width: 106px;
+    height:15px;
+    border: 0;
+    background-color: transparent;
+    
+}
+
+/* main body */
+
 .main{
     min-width: 980px;
-    width:1440px;
+    width:1160px;
     height:775px;
     background: url("your_verse_hero.jpg");
     background-size: cover;
@@ -25,7 +115,7 @@ body{
     
 }
 #article {
-    width:1440px;
+    width:1160px;
     height:200px;
     display: flex;
     align-items: center;
