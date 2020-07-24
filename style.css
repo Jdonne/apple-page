@@ -7,9 +7,10 @@ html {
     }
 
 body{
-    background: grey;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 950px;
 }
 
 /* navbar */
@@ -27,11 +28,9 @@ nav {
     background-image: linear-gradient(
         to bottom,
         #8b8b8b,
-        
         #707070 50%,
         #5e5e5e 50%,
         #787878
-    
     );
 }
 ul {
@@ -40,10 +39,8 @@ ul {
     list-style-type: none;
     display:flex;
     justify-content: flex-start
-    
-    
-
 }
+
 li {
     width: 104px;
     height:36.5px;
@@ -103,24 +100,25 @@ li:first-child {
 /* main body */
 
 .main{
-    min-width: 980px;
-    width:1160px;
-    height:775px;
-    background: url("your_verse_hero.jpg");
+    width:1440px;
+    min-height:775px;
+    background: url("sources/your_verse_hero.jpg");
     background-size: cover;
     background-position: center bottom;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 #article {
-    width:1160px;
+    width:1440px;
     height:200px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-basis: 980px;
+    flex-shrink:1;
+    min-width: 70%;
+    flex-basis: 70%;
 }
 
 #title{
@@ -139,4 +137,20 @@ li:first-child {
     object-fit: cover;
     object-position: top;
     margin-top: 25px;
+}
+
+/* aside bar */
+aside {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+aside img{
+    margin: 2px 2px 0px 0px;
+    width: 358.5px;
+    height: 200px;
+   
 }
